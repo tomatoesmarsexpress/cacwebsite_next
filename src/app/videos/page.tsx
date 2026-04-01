@@ -24,10 +24,10 @@ const videoItems = [
 
 export default function VideosPage() {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center px-6 pb-16 pt-24">
+    <main className="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col p-4 sm:p-8">
       <Link
         href="/"
-        className="absolute left-6 top-6 text-slate-500 transition-colors hover:text-slate-800"
+        className="absolute left-6 top-6 text-slate-700 text-4xl font-black leading-none transition-colors hover:text-slate-900"
         aria-label="Zurueck zur Startseite"
       >
         ←
@@ -72,6 +72,7 @@ export default function VideosPage() {
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  sandbox="allow-scripts allow-same-origin"
                 />
               </div>
             </div>

@@ -24,7 +24,7 @@ export default function DasTeamPage() {
       
       <section className="flex min-h-[60vh] flex-col items-center justify-center p-8 text-center">
         <p className="max-w-xl text-xl font-semibold sm:text-3xl">
-          Hier kommen noch die Bilder von Fynns Kamera und so
+        „Unsere Mission ist die auditive Heilung des Planeten. Wir kreieren nicht einfach nur Sound, sondern orchestrieren eine globale Bewegung der Empathie. Durch die Synergie von Frequenz und Humanität transformieren wir jeden Beat in einen Baustein für eine bessere Welt. Musik ist unser Versprechen:Harmony for Humanity.“
         </p>
       </section>
 
