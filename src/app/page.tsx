@@ -44,9 +44,10 @@ export default function Home() {
         <Image
           src="/images/logo.png"
           alt="Band Logo"
-          width={1400}
-          height={500}
+          width={800}
+          height={300}
           priority
+          sizes="(max-width: 640px) 100vw, 800px"
           className="h-auto w-auto max-w-full sm:max-w-2xl object-contain"
         />
       </section>
