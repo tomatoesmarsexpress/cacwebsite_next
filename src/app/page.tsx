@@ -21,7 +21,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-8 overflow-hidden p-4 sm:p-8 lg:p-10">
+    <main className="relative mx-auto flex w-full max-w-7xl flex-col gap-8 overflow-hidden p-4 sm:p-8 lg:p-10">
       <Image
         src="/images/fly.png"
         alt="Fly"
@@ -47,7 +47,7 @@ export default function Home() {
           width={800}
           height={300}
           priority
-          sizes="(max-width: 640px) 100vw, 800px"
+          sizes="(max-width: 640px) 100%, (max-width: 1024px) 90%, 800px"
           className="h-auto w-auto max-w-full sm:max-w-2xl object-contain"
         />
       </section>
@@ -59,17 +59,15 @@ export default function Home() {
             href={section.href}
             className="inline-block transition-transform duration-200 hover:-translate-y-1"
           >
-            <Image
-              src={section.image}
-              alt={section.alt}
-              width={900}
-              height={900}
-              className={`h-auto w-auto object-contain ${
-                section.href === "/das-team"
-                  ? "max-w-full sm:max-w-[100%]"
-                  : "max-w-full"
-              }`}
-            />
+            <div className="w-full aspect-square flex items-center justify-center">
+              <Image
+                src={section.image}
+                alt={section.alt}
+                width={900}
+                height={900}
+                className="h-auto w-auto max-w-full object-contain"
+              />
+            </div>
           </Link>
         ))}
       </section>
